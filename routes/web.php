@@ -20,3 +20,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/pemilih', [App\Http\Controllers\PemilihController::class, 'index']);
+Route::get('/pemilih/list/{id}', [App\Http\Controllers\PemilihController::class, 'show']);
