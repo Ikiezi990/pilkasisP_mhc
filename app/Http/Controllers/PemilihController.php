@@ -14,7 +14,7 @@ class PemilihController extends Controller
     public function index()
     {
         $data['pemilih'] = Pemilih::all();
-        return view('pemilih.index', $data);
+        return view('admin.data_pemilih.dataPemilih', $data);
     }
 
     /**

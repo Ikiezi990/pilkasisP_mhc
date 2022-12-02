@@ -6,9 +6,15 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('pemilih.index');
 });
-Route::get('/admin', function () {
+Route::get('/admin/index', function () {
     return view('admin.indexAdmin');
 });
+
+
+
+
+
+
 
 Auth::routes();
 
