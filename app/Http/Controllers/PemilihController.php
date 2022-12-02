@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pemilih;
+use App\Models\Kelas;
 class PemilihController extends Controller
 {
     /**
@@ -13,7 +14,8 @@ class PemilihController extends Controller
      */
     public function index()
     {
-        $data['pemilih'] = Pemilih::all();
+        
+        $data['kelas'] = Kelas::all();
         return view('admin.data_pemilih.dataPemilih', $data);
     }
 
