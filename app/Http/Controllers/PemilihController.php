@@ -48,7 +48,7 @@ class PemilihController extends Controller
      */
     public function show($id)
     {
-        $data['pemilih'] = Pemilih::where('id', $id)->get();
+        $data['pemilih'] = Pemilih::where('kelas_id', $id)->get();
         return view('admin.data_pemilih.pemilihlist', $data);
     }
 
