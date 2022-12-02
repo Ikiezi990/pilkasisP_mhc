@@ -19,7 +19,7 @@ class KelasSeeder extends Seeder
     	for($i = 1; $i <= 50; $i++){
  
     	      // insert data ke table pegawai menggunakan Faker
-    		DB::table('pemilihs')->insert([
+    		DB::table('kelas')->insert([
     			'nama_kelas' => 'XII RPL' . $i,
     		]);
         }
