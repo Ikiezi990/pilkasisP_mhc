@@ -275,7 +275,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="{{ url('admin/index') }}">
+        <a class="nav-link  @if (request()->is('admin/index*') == false ) collapsed  @endif" href="{{ url('admin/index') }}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -452,36 +452,34 @@
       </li><!-- End Icons Nav -->
 
       <li class="nav-heading">Pages</li> --}}
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="ri-user-3-line"></i>
-          <span>Calon Ketua & wakil</span>
+        <a class="nav-link @if (request()->is('admin/calon-kewa*') == false ) collapsed  @endif" href="{{ url('/admin/calon-kewa') }}">
+          <i class="ri-user-3-line "></i>
+          <span> Calon Ketua & Wakil</span>
         </a>
-      </li><!-- End Profile Page Nav -->
-
+      </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/pemilih') }}">
+        <a class="nav-link @if (request()->is('pemilih*') == false ) collapsed  @endif" href="{{ url('/pemilih') }}">
           <i class="bi bi-question-circle"></i>
           <span> Data Pemilih</span>
         </a>
-      </li><!-- End F.A.Q Page Nav -->
+      </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link @if (request()->is('admin/laporan*') == false ) collapsed  @endif" href="{{ url('/admin/laporan') }}">
           <i class="ri-file-list-2-line"></i>
           <span>Laporan</span>
         </a>
       </li><!-- End Contact Page Nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link @if (request()->is('admin/periode*') == false ) collapsed  @endif" href="{{ url('/admin/periode') }}">
           <i class="bi bi-envelope"></i>
           <span>Periode</span>
         </a>
       </li><!-- End Contact Page Nav -->
 {{-- 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link " href="pages-register.html">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
         </a>
@@ -518,16 +516,16 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    {{-- <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    <div class="copyright">
+      &copy; Malem <strong><span>Sabtu</span></strong>. wokowkwok
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div> --}}
+      Designed awang awang <a href="https://bootstrapmade.com/"></a>
+    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
