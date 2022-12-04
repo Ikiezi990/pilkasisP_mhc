@@ -32,6 +32,7 @@ Route::get('/admin/laporan', function () {
     return view('admin.laporan.laporan',$data);
 });
 
+
 // route untuk menu menu Periode
 Route::get('/admin/periode', function () {
     $data['title']='Periode ';

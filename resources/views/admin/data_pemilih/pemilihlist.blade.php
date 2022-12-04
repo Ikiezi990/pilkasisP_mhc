@@ -1,11 +1,11 @@
 @extends('admin.layoutAdmin')
 @section('admin')
 <div class="pagetitle">
-    <h1>Dashboard</h1>
+    <h1>{{ $title }}</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Dashboard</li>
+        <li class="breadcrumb-item"><a href="{{ url('admin/index') }}">Home</a></li>
+        <li class="breadcrumb-item active">{{ $title }}</li>
       </ol>
     </nav>
   </div>
@@ -36,7 +36,7 @@
                                 <i class="ri-delete-bin-6-line text-danger"></i>
                             </button>
                         </form>
-                        <a href="" class="btn border-primary">
+                        <a href="" class="btn border-primary ">
                             <i class="ri-edit-line text-primary"></i>
                         </a>
                     </div>
@@ -46,7 +46,7 @@
        </table>
 
 
-         
+
       </div>
     </div>
   </section>
@@ -57,7 +57,7 @@
 
 <script type="text/javascript">
 
- 
+
 
      $('.show_confirm').click(function(event) {
 
@@ -93,7 +93,7 @@
 
       });
 
-  
+
 
 </script>
 @endsection

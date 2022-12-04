@@ -1,11 +1,10 @@
 @extends('admin.layoutAdmin')
 @section('admin')
 <div class="pagetitle">
-    <h1>Dashboard</h1>
+    <h1>{{ $title }}</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">{{ $title }}</li>
+        <li class="breadcrumb-item active"><a href="{{ url('admin/index') }}">{{ $title }}</a></li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -88,7 +87,7 @@
           </div><!-- End Revenue Card -->
 
           <!-- Customers Card -->
-          <div class="col-xxl-4 col-xl-12">
+          <div class="col-xxl-4 col-md-6">
 
             <div class="card info-card customers-card">
 
