@@ -280,7 +280,7 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-{{-- 
+{{--
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -459,7 +459,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link @if (request()->is('pemilih*') == false ) collapsed  @endif" href="{{ url('/pemilih') }}">
+        <a class="nav-link @if (request()->is('admin/pemilih*') == false ) collapsed  @endif" href="{{ url('admin/pemilih') }}">
           <i class="bi bi-question-circle"></i>
           <span> Data Pemilih</span>
         </a>
@@ -477,7 +477,7 @@
           <span>Periode</span>
         </a>
       </li><!-- End Contact Page Nav -->
-{{-- 
+{{--
       <li class="nav-item">
         <a class="nav-link " href="pages-register.html">
           <i class="bi bi-card-list"></i>

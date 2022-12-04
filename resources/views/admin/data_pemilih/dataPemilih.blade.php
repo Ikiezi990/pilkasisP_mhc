@@ -40,8 +40,8 @@
                                         <div class="col-10 col-md-10">
                                             <h5 class="mt-2"> <span> {{ $item->nama_kelas }}</span></h5>
                                         </div>
-                                        <div class="col-2 col-md-2 float-right opacity-75 ps-2 ps-md-0  border">
-                                            <a class="btn btn-outline-primary" href="/pemilih/list/{{ $item->id }}" >
+                                        <div class="col-2  col-md-2 col-lg-1  float-right opacity-75  ps-sm-0  ps-md-0 ">
+                                            <a class="btn btn-outline-primary" href="pemilih/list/{{ $item->id }}" >
                                               <i class="ri-arrow-right-s-line"></i>
                                             </a>
                                         </div>
